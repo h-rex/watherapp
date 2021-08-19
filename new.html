@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+   
+
+    <title>Wather App</title>
+    <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+                }
+
+                @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+                }
+                svg {
+                position: absolute;
+                top: -4000px;
+                left: -4000px; }
+
+                #gooey-button {
+                padding: 0 10rem 0 10rem;
+                font-size: 2rem;
+                border: none;
+                color: #0c1016;
+                filter: url("#gooey");
+                position: relative;
+                background-color: aqua; }
+                #gooey-button:focus {
+                    outline: none; }
+                #gooey-button .bubbles {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0; }
+                    #gooey-button .bubbles .bubble {
+                    background-color: aqua;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    z-index: -1; }
+                    #gooey-button .bubbles .bubble:nth-child(1) {
+                        left: 16px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-1 3.02s infinite;
+                        animation-delay: 0.2s; }
+                    #gooey-button .bubbles .bubble:nth-child(2) {
+                        left: 54px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-2 3.04s infinite;
+                        animation-delay: 0.4s; }
+                    #gooey-button .bubbles .bubble:nth-child(3) {
+                        left: 70px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-3 3.06s infinite;
+                        animation-delay: 0.6s; }
+                    #gooey-button .bubbles .bubble:nth-child(4) {
+                        left: 95px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-4 3.08s infinite;
+                        animation-delay: 0.8s; }
+                    #gooey-button .bubbles .bubble:nth-child(5) {
+                        left: 15px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-5 3.1s infinite;
+                        animation-delay: 1s; }
+                    #gooey-button .bubbles .bubble:nth-child(6) {
+                        left: 20px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-6 3.12s infinite;
+                        animation-delay: 1.2s; }
+                    #gooey-button .bubbles .bubble:nth-child(7) {
+                        left: 64px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-7 3.14s infinite;
+                        animation-delay: 1.4s; }
+                    #gooey-button .bubbles .bubble:nth-child(8) {
+                        left: 15px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-8 3.16s infinite;
+                        animation-delay: 1.6s; }
+                    #gooey-button .bubbles .bubble:nth-child(9) {
+                        left: 95px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-9 3.18s infinite;
+                        animation-delay: 1.8s; }
+                    #gooey-button .bubbles .bubble:nth-child(10) {
+                        left: 21px;
+                        width: 25px;
+                        height: 25px;
+                        animation: move-10 3.2s infinite;
+                        animation-delay: 2s; }
+
+                @keyframes move-1 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -120px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-2 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -86px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-3 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -81px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-4 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -90px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-5 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -72px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-6 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -104px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-7 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -60px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-8 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -92px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-9 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -123px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+
+                @keyframes move-10 {
+                0% {
+                    transform: translate(0, 0); }
+                99% {
+                    transform: translate(0, -72px); }
+                100% {
+                    transform: translate(0, 0);
+                    opacity: 0; } }
+                    #weathercon{
+                        height: 55%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3em;
+                    }
+                    #weathercon .fas{
+                        font-size: 6rem;
+                        animation: fas-anime 3s linear infinite alternate;
+                    }
+                    @keyframes fas-anime{
+                        from {
+                        transform: scale(0.8);
+                        }
+                        to{
+                        transform: scale(1);
+                        }
+                        
+                    }
+    </style>
+
+</head>
+
+<body class="d-flex h-100 text-center text-white" style="background-image: url(https://images.unsplash.com/photo-1530625243345-797b4c1836ee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2xvdWRzfHx8fHx8MTYyOTM3MjI2MQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <!-- navbar -->
+         <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0 " style="padding-left: 20px;">Wather App</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link active text-white" aria-current="page" href="http://localhost:9000/">Refresh</a>
+            </nav>
+          </div>
+        </header>
+
+        <main class="px-3 m-5">
+  
+            <div style="margin-top: 2rem;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <def>
+                        <filter id="gooey">
+                            <!-- in="sourceGraphic" -->
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="highContrastGraphic" />
+                            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                        </filter>
+                    </def>  
+                </svg>
+
+                <button  id="gooey-button">
+                    <div class="p-3 rounded ">
+                        <div class="box ">
+                            <div id="weathercon">
+                              <i class="fas fa-sun" style="color: 001621"></i>
+                            </div>
+                            <div class="info">
+                                <h2 class="location">{%state%}, {%country%} </i></h2>
+                                <p id="date" style="font-size: 20px; font-weight: 80;">SAT | Oct 23 | 02:44 AM</p>
+                                <h1 class="temp">Temprature : {%tempval%}&deg;C </h1>
+                                <p style="font-size: 20px; font-weight: 80;">last Update On : {%Update%} </p>
+                            </div>  
+                          </div>
+                        <div class=" text-dark" style="font-size: 100px;" id="time">
+                        </div>
+                    </div>
+
+                    <span class="bubbles">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </button>
+            </div>
+
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>FOR MORE <a href="https://www.youtube.com/c/codeburner" class="text-white text-decoration-none">CODE BURNER</a>, by <a href="#"
+                    class="text-white text-decoration-none">@Hrex</a>.</p>
+        </footer>
+    </div>
+    <!-- javascript -->
+    <script>
+        const Mydate = document.getElementById("date");
+        const tempStatus = document.getElementById("temp")
+
+        const getCurDate = () => {
+            const day = [
+                "SUN",
+                "MON",
+                "TUE",
+                "WED",
+                "THU",
+                "FIR",
+                "SAT"
+            ]
+            let currentDate = new Date(); 
+            let dayy = day[currentDate.getDay()];
+            return dayy;
+        };
+        // getCurDate()
+
+        const GetTime = () => {
+            const monthName = [
+                "JAN",
+                "FEB",
+                "MAR",
+                "APR",
+                "MAY",
+                "JUNE",
+                "JULY",
+                "AUG",
+                "SEPT",
+                "OCT",
+                "NOV",
+                "DEC"
+            ]
+            var currentTime = new Date();
+            var month = monthName[currentTime.getMonth() + 1];
+            var day = currentTime.getDate();
+           
+            let Hour = currentTime.getHours();
+            let Min = currentTime.getMinutes();
+            let year = currentTime.getFullYear();   
+            let period = "AM";
+            if (Hour > 11);{
+                period = "PM";
+                if (Hour >12) Hour -= 12;
+            }
+            if (Min < 10) {
+                Min = "0" + Min 
+            }
+
+            return ` ${month} ${day} | ${Hour}:${Min}${period}`;  
+        }
+         
+        Mydate.innerHTML = getCurDate() + " |" + GetTime();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
